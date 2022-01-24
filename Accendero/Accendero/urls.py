@@ -20,6 +20,7 @@ from Display import views
 
 router = routers.DefaultRouter()
 router.register(r'items', views.ItemView, 'item')
+router.register(r'forecasts', views.ForecastView, 'forecast_entry')
 
 urlpatterns = [
     path('', include("Display.urls")),
